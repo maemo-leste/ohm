@@ -55,3 +55,6 @@ MAINTAINERCLEANFILES =	\
 	po/*.bak
 
 DISTCHECK_CONFIGURE_FLAGS=--disable-gtk-doc --with-xauth-dir=/home/user
+
+install-exec-hook:
+	find $(DESTDIR) -type f -name \*.la -delete
