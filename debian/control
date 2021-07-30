@@ -1,0 +1,32 @@
+Source: ohm
+Section: libs
+Priority: optional
+Maintainer: Ivan J. <parazyd@dyne.org>
+Build-Depends:
+ debhelper-compat (= 12),
+ libglib2.0-dev,
+ libdbus-1-dev,
+ libdbus-glib-1-dev,
+ check,
+Standards-Version: 4.3.0
+
+Package: ohm-plugin-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: OHM libraries and plugins
+ This package contains libraries needed for running OHM and
+ developing OHM plugins.
+
+Package: ohm-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ ohm-plugin-core (= ${binary:Version}),
+Description: OHM development headers
+ This package contains development files for OHM.
+
+Package: ohm-configs-default
+Architecture: any
+Depends: {shlibs:Depends}, ${misc:Depends},
+ ohm-plugin-core (= ${binary:Version}),
+Description: OHM configuration files
+ This package contains common OHM configuration files.
