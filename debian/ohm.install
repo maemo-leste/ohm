@@ -1,0 +1,6 @@
+usr/share/dbus-1/*
+usr/lib/*/*.so.*
+etc/ohm/*
+etc/dbus-1/*
+usr/sbin/*
+usr/lib/systemd/*

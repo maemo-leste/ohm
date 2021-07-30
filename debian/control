@@ -10,7 +10,7 @@ Build-Depends:
  check,
 Standards-Version: 4.3.0
 
-Package: ohm-plugin-core
+Package: ohm
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: OHM libraries and plugins
@@ -19,14 +19,8 @@ Description: OHM libraries and plugins
 
 Package: ohm-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
- ohm-plugin-core (= ${binary:Version}),
+Depends: 
+ ${misc:Depends},
+ ohm (= ${binary:Version}),
 Description: OHM development headers
  This package contains development files for OHM.
-
-Package: ohm-configs-default
-Architecture: any
-Depends: {shlibs:Depends}, ${misc:Depends},
- ohm-plugin-core (= ${binary:Version}),
-Description: OHM configuration files
- This package contains common OHM configuration files.

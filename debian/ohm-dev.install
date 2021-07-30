@@ -1,0 +1,4 @@
+usr/include/ohm/*
+usr/lib/*/pkgconfig/*.pc
+usr/lib/*/*.so
+etc/sysconfig/*.debug
