@@ -34,7 +34,7 @@
 #include <dbus/dbus-glib.h>
 #include <dbus/dbus-glib-lowlevel.h>
 
-#include <simple-trace/simple-trace.h>
+/* #include <simple-trace/simple-trace.h> */
 
 #include "ohm-debug.h"
 #include "ohm-common.h"
@@ -291,6 +291,7 @@ parse_trace(const gchar *option_name, const gchar *value,
 static void
 activate_trace(void)
 {
+	/*
 	int  i;
 	char help[32*1024];
 
@@ -311,6 +312,7 @@ activate_trace(void)
 	}
 
 	trace_context_enable(TRACE_DEFAULT_CONTEXT);
+	*/
 }
 
 
