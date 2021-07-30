@@ -1,4 +1,9 @@
 #!/usr/bin/make -f
 
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-static \
+		--without-xauth
+
 %:
 	dh $@
