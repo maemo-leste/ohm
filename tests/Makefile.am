@@ -8,7 +8,10 @@ AM_CPPFLAGS =	\
 
 
 test_fact_SOURCES   = test-fact.c
-test_fact_LDADD     = $(top_builddir)/libfactstore/libohmfact.la $(GLIB_LIBS) -lcheck
+test_fact_CFLAGS    = -pthread
+test_fact_LDFLAGS   = -pthread
+test_fact_LDADD     = $(top_builddir)/libfactstore/libohmfact.la $(GLIB_LIBS) \
+	-lcheck -lrt -lm -lsubunit
 
 noinst_PROGRAMS = test-fact
 
