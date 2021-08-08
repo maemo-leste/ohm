@@ -1,6 +1,6 @@
 AC_PREREQ(2.61)
 
-AC_INIT([ohm], m4_esyscmd([./git-version-gen .tarball-version]))
+AC_INIT([ohm], [1.3.1])
 AC_CONFIG_SRCDIR([ohmd/ohm-main.c])
 AM_INIT_AUTOMAKE
 AC_CONFIG_HEADER([config.h])
