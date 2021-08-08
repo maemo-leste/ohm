@@ -7,6 +7,7 @@ Build-Depends:
  libglib2.0-dev,
  libdbus-1-dev,
  libdbus-glib-1-dev,
+ libsimple-trace-dev,
  check,
 Standards-Version: 4.3.0
 
