@@ -1,3 +1,10 @@
+ohm (1.3.1) unstable; urgency=medium
+
+  * Revert "HACK: Workaround missing libsimple-trace."
+  * Add dependency for libsimple-trace.
+
+ -- Ivan J. <parazyd@dyne.org>  Sun, 08 Aug 2021 10:15:35 +0200
+
 ohm (1.3.0) unstable; urgency=medium
 
   * Initial Leste packaging.
